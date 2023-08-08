@@ -1,4 +1,4 @@
-package notice.model.vo;
+package board.model.vo;
 
 import java.sql.Date;
 
@@ -9,6 +9,27 @@ public class QuestionBoard {
 	private String BoardWriter;
 	private Date BoardWriteDate;
 	
+	public QuestionBoard() {}
+	
+	
+	public QuestionBoard(String boardSubject, String boardContent, String boardWriter) {
+		super();
+		BoardSubject = boardSubject;
+		BoardContent = boardContent;
+		BoardWriter = boardWriter;
+	}
+
+
+	public QuestionBoard(String boardNo, String boardSubject, String boardContent, String boardWriter,
+			Date boardWriteDate) {
+		super();
+		BoardNo = boardNo;
+		BoardSubject = boardSubject;
+		BoardContent = boardContent;
+		BoardWriter = boardWriter;
+		BoardWriteDate = boardWriteDate;
+	}
+
 
 	public String getBoardNo() {
 		return BoardNo;

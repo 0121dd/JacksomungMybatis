@@ -1,12 +1,12 @@
-package notice.model.service;
+package board.model.service;
 
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
+import board.model.dao.NoticeDAO;
+import board.model.vo.Notice;
 import common.SqlSessionTemplate;
-import notice.model.dao.NoticeDAO;
-import notice.model.vo.Notice;
 
 public class NoticeService {
 	

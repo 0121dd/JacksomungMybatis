@@ -15,7 +15,7 @@
                     <div class="nbList"> 
                         <ul>
                             <li><a href="/notice/list.do" style="font-weight: bold;">공지사항</a></li>
-                            <li><a href="./productInquiry.html">상품문의</a></li>
+                            <li><a href="/board/questionList.do">상품문의</a></li>
                             <li><a href="./csDetail.html">FAQ</a></li>
                         </ul>
                     </div>

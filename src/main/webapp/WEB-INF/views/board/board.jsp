@@ -14,8 +14,8 @@
                     <h2>고객센터</h2>
                     <div class="nbList"> 
                         <ul>
-                            <li><a href="./customerService.html">공지사항</a></li>
-                            <li><a href="./productInquiry.html" style="font-weight: bold;">상품문의</a></li>
+                            <li><a href="/notice/list.do">공지사항</a></li>
+                            <li><a href="/board/questionList.do" style="font-weight: bold;">상품문의</a></li>
                             <li><a href="./csDetail.html">FAQ</a></li>
                         </ul>
                     </div>
@@ -27,30 +27,22 @@
                                 <td>작성자</td>
                                 <td>작성일</td>
                             </tr>
+                            <c:forEach var="question" items="${requestScope.qList}">
                             <tr>
-                                <td>253</td>
-                                <td>상품 문의</td>
-                                <td>김****</td>
-                                <td>2023.04.10</td>
+                                <td>${question.boardNo }</td>
+                                <td>${question.boardSubject }</td>
+                                <td>${question.boardWriter }</td>
+                                <td>${question.boardWriteDate }</td>
                             </tr>
+                            </c:forEach>
                             <tr>
-                                <td>252</td>
-                                <td>상품 문의</td>
-                                <td>최****</td>
-                                <td>2023.04.05</td>
-                            </tr>
-                            <tr>
-                                <td>251</td>
-                                <td>상품 문의</td>
-                                <td>박****</td>
-                                <td>2023.03.25</td>
-                            </tr>
-                            <tr>
-                                <td>250</td>
-                                <td>상품 문의</td>
-                                <td>이****</td>
-                                <td>2023.03.20</td>
-                            </tr>
+								<td colspan="3" align="center">
+									${pageNavi }
+								</td>
+								<td>
+									<a href="/board/insert.do">글쓰기</a>
+								</td>
+							</tr>
                         </table>
                     </div>
                 </div>

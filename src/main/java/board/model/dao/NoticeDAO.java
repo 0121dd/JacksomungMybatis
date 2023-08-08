@@ -1,10 +1,10 @@
-package notice.model.dao;
+package board.model.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import notice.model.vo.Notice;
+import board.model.vo.Notice;
 
 public class NoticeDAO {
 
